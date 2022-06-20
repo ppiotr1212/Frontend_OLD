@@ -1,0 +1,19 @@
+<form method="POST">
+    <p>Name: <input type="text" name="name" ></p>
+    <p>Animal: <input type="text" name = "animal"></p>
+    <p><input type="submit" value="Add Animals" name="add_animal">
+       <input type="submit" value="Get Animals" name="get_animals"/></p>
+</form>
+
+<pre>Animals:
+    {% for x in animals %}
+    Name: {{x['name']}}
+    Animal: {{x['animal']}}
+    {% endfor %}
+</pre>
+<pre>Action log: 
+    {% for row in log %}
+    >>> {{ row }}
+    {% endfor %}
+</pre>
+
