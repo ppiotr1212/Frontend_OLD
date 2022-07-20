@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Get code') {
             steps {
-                // CGet code from github repo
+                // Get code from github repo
                 checkout scm
             }
         }
